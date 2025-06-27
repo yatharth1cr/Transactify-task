@@ -5,6 +5,7 @@ import ServicesOffered from "./components/projectsType/ServicesOffered";
 import Welcome from "./components/welcome/Welcome";
 import Footer from "./components/footer/Footer";
 import NewsSection from "./components/newsSection/NewsSection";
+import AfricaMessage from "./components/africaMessage/AfricaMessage";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <Welcome />
       <ServicesOffered />
       <FeaturedProjects />
+      <AfricaMessage />
       <NewsSection />
       <Footer />
     </>
