@@ -1,0 +1,27 @@
+.navbar-logo {
+  height: 65px;
+  color: white;
+  padding-left: 2rem;
+}
+
+.custom-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.nav-links {
+  background-color: #fa4d09;
+  padding: 1.25rem 2rem;
+}
+
+.nav-links .nav-link {
+  color: white !important;
+  font-size: 0.6rem;
+}
+
+.nav-links .nav-link:hover {
+  text-decoration: underline;
+}

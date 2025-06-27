@@ -1,0 +1,150 @@
+.featured-section {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.featured-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.featured-subheading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  position: relative;
+  height: 300px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-category {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 4px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.project-info {
+  align-self: flex-start;
+}
+
+.project-info h5 {
+  font-size: 16px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.project-info p {
+  font-size: 13px;
+  margin: 0;
+  opacity: 0.9;
+}
+.featured-section {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.featured-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.featured-subheading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  position: relative;
+  height: 300px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-category {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 4px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.project-info {
+  align-self: flex-start;
+}
+
+.project-info h5 {
+  font-size: 16px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.project-info p {
+  font-size: 13px;
+  margin: 0;
+  opacity: 0.9;
+}

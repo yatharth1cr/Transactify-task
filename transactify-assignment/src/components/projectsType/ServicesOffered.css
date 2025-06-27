@@ -1,0 +1,25 @@
+.services-wrapper {
+  background: #fff;
+}
+
+.highlight-text {
+  color: #ff6600;
+  font-size: 1.5rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
