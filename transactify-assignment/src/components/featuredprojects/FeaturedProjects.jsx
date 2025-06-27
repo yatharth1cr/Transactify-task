@@ -1,8 +1,8 @@
 import React from "react";
 import "./FeaturedProjects.css";
-import proj1 from "../../assets/icon-project-landing.jpg";
-import proj2 from "../../assets/icon-project-landing.jpg";
-import proj3 from "../../assets/icon-project-landing.jpg";
+import proj1 from "../../assets/project-landing.jpg";
+import proj2 from "../../assets/project-landing01.jpg";
+import proj3 from "../../assets/landing.jpg";
 import proj4 from "../../assets/icon-project-landing.jpg";
 
 const projects = [
@@ -34,32 +34,34 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="featured-section py-5">
-      <div className="container">
-        <h2 className="featured-heading">Featured Projects</h2>
-        <p className="featured-subheading">
-          Completion of projects in a time frame, continuous human resources
-          development, and a strong commitment to client satisfaction.
-        </p>
+    <section className="featured-section container">
+      <div className="welcome-bg-text">Featured Projects</div>
+      <h2 className="featured-heading"></h2>
+      <p className="featured-subheading">
+        Completion of projects in a time frame, continuous human resources
+        development, and a strong commitment to client satisfaction.
+      </p>
 
-        <div className="row gx-4 gy-4">
-          {projects.map((p, i) => (
-            <div className="col-12 col-md-6 col-xl-3" key={i}>
-              <div
-                className="project-card"
-                style={{ backgroundImage: `url(${p.image})` }}
-              >
-                <div className="project-overlay">
-                  <div className="project-category">{p.category}</div>
-                  <div className="project-info">
-                    <h5>{p.title}</h5>
-                    <p>{p.location}</p>
-                  </div>
+      <div className="row g-4 justify-content-evenly">
+        {projects.map((project, index) => (
+          <div
+            className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
+            key={index}
+          >
+            <div
+              className="project-card"
+              style={{ backgroundImage: `url(${project.image})` }}
+            >
+              <div className="project-overlay">
+                <div className="project-category">{project.category}</div>
+                <div className="project-info">
+                  <h5>{project.title}</h5>
+                  <p>{project.location}</p>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

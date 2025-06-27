@@ -1,0 +1,30 @@
+.africa-map {
+  max-width: 100%;
+  height: auto;
+}
+
+.speech-bubble {
+  background-color: #f25022;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #f25022;
+  border-bottom: 0;
+  margin-left: -10px;
+}
+
+.partner-logo {
+  max-height: 50px;
+  object-fit: contain;
+  margin: 0 10px;
+}
