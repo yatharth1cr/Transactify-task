@@ -1,25 +1,115 @@
-.news-main {
+/* ========== Wrapper Section ========== */
+.news-wrapper {
+  background-color: #fff;
+  padding: 4rem 1rem;
   position: relative;
+  overflow: hidden;
 }
 
-.news-main img {
+/* ========== Background Watermark Text ========== */
+.welcome-bg-text {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 7rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.04);
+  text-transform: uppercase;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* ========== Section Heading ========== */
+.section-heading {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+/* ========== Main News Card ========== */
+.main-news-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.main-news-card img {
   width: 100%;
-  height: auto;
-  border-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.news-date {
-  background: #ff5b00;
-  color: white;
-  font-size: 14px;
+.main-news-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: #fff;
+}
+
+.main-news-overlay h5 {
+  margin: 0.25rem 0 0;
+  padding: 0.5rem 0.5rem 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
+  background-color: #fff;
+  color: #000;
+}
+
+/* ========== Shared Meta Label ========== */
+.news-meta {
+  background-color: #ff5b00;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
   padding: 4px 8px;
   display: inline-block;
+}
+
+/* ========== Small News Cards ========== */
+.small-news {
+  display: flex;
+  gap: 1rem;
+  height: 130px;
+}
+
+.small-news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text inside small news */
+.small-text {
+  width: 50%;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.small-text p {
   margin-top: 10px;
 }
 
-.news-item img {
-  object-fit: cover;
-  height: 100px;
-  border-radius: 4px;
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .welcome-bg-text {
+    font-size: 3.5rem;
+    top: 10px;
+    left: 20px;
+  }
+
+  .main-news-overlay h5 {
+    font-size: 0.9rem;
+  }
+
+  .news-meta {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
 }
