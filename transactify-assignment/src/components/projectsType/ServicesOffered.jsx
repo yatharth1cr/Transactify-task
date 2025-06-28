@@ -14,18 +14,19 @@ const services = [
 
 export default function ServicesOffered() {
   return (
-    <section className="services-wrapper py-5 ">
-      <div className="container text-center flex flex-row justify-content-center">
-        <h2 className="highlight-text fw-bold mb-4">
-          No compromise on product quality.
-        </h2>
-        <div className="row justify-content-center">
+    <section className="services-wrapper py-5">
+      <div className="container text-center">
+        <div className="d-flex justify-content-center align-items-center service-row">
+          <h2 className="highlight-text fw-bold">
+            No compromise <br /> on product quality.
+          </h2>
           {services.map((service, i) => (
-            <div key={i} className="col-6 col-md-3 mb-4">
-              <div className="service-item">
-                <img src={service.icon} alt={service.title} className="mb-2" />
-                <p className="service-title">{service.title}</p>
-              </div>
+            <div
+              key={i}
+              className={`service-item px-4 ${i !== 0 ? "with-divider" : ""}`}
+            >
+              <img src={service.icon} alt={service.title} />
+              <p className="service-title mt-2">{service.title}</p>
             </div>
           ))}
         </div>
