@@ -1,44 +1,54 @@
 .africa-message {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.africa-map {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  flex-shrink: 0;
+  align-items: center;
+  min-height: 450px;
 }
 
 .speech-box {
   background-color: #f25022;
   color: white;
-  padding: 2rem;
+  padding: 3rem 4rem 5rem 16rem;
   max-width: 700px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 85% 85%, 0 85%);
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 85%, 90% 100%, 85% 85%, 0 85%);
+  z-index: 1;
+}
+
+.africa-map {
+  position: absolute;
+  top: 40%;
+  left: 0rem;
+  transform: translateY(-50%);
+  width: 400px;
+  max-width: 40vw;
+  z-index: 2;
 }
 
 .speech-heading {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 1rem;
+  z-index: 3;
+  position: relative;
 }
 
 .speech-heading span {
   color: white;
   font-weight: 900;
+  font-size: 2rem;
 }
 
 .speech-heading em {
   font-style: italic;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .speech-text {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.6;
+  position: relative;
+  z-index: 3;
 }

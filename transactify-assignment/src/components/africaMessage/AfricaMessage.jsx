@@ -8,7 +8,8 @@ export default function AfricaMessage() {
       <img src={africaMap} alt="Africa Map" className="africa-map" />
       <div className="speech-box">
         <h2 className="speech-heading">
-          Always keeping <span>Africa</span> <em>first</em>
+          Always keeping <br />
+          <span>Africa</span> <em>first</em>
         </h2>
         <p className="speech-text">
           At Simba Developer, we prioritize doing the right things, the right
