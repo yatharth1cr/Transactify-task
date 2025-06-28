@@ -33,34 +33,31 @@
 }
 
 .featured-subheading {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
-  color: #444;
-  max-width: 800px;
-  margin: 0 auto 2rem;
+  color: black;
+  max-width: 100%;
   text-align: center;
+  line-height: 1;
   position: relative;
+  text-align: start;
   z-index: 1;
 }
 
 .project-card-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .project-card {
+  margin: 0.1em;
   width: 100%;
   height: 320px;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-.project-card:hover {
-  transform: scale(1.03);
 }
 
 .project-overlay {

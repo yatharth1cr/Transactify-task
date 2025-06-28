@@ -42,7 +42,7 @@ export default function FeaturedProjects() {
         development, and a strong commitment to client satisfaction.
       </p>
 
-      <div className="row g-4 justify-content-evenly">
+      <div className="g-4 justify-content-evenly project-card-wrapper">
         {projects.map((project, index) => (
           <div
             className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"

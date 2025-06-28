@@ -6,6 +6,7 @@ import Welcome from "./components/welcome/Welcome";
 import Footer from "./components/footer/Footer";
 import NewsSection from "./components/newsSection/NewsSection";
 import AfricaMessage from "./components/africaMessage/AfricaMessage";
+import Partners from "./components/partners/Partners";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <ServicesOffered />
       <FeaturedProjects />
       <AfricaMessage />
+      <Partners />
       <NewsSection />
       <Footer />
     </>
