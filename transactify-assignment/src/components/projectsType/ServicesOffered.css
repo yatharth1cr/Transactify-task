@@ -4,7 +4,12 @@
 
 .highlight-text {
   color: #ff6600;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.service-row {
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .service-item {
@@ -15,11 +20,14 @@
 
 .service-item img {
   height: 50px;
-  margin-bottom: 10px;
 }
 
 .service-title {
   font-size: 14px;
   color: #222;
-  font-weight: 500;
+  text-align: center;
+}
+
+.with-divider {
+  border-left: 1px solid #ccc;
 }
